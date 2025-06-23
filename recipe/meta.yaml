@@ -1,13 +1,13 @@
 {% set name = "napari-proofread-brainbow" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-proofread-brainbow-{{ version }}.tar.gz
-  sha256: 2093bc0736413cdbc4dfc2a08fa3aa206b73f6027ca2f49d4d77b2b7478557d2
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: a6c1e4317371e68595a13db675c7e05835b10aab750685a3f0fae9af685916c4
 
 build:
   noarch: python
